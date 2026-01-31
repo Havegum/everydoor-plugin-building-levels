@@ -1,0 +1,13 @@
+id: missing_building_levels
+title: Missing Building Levels
+author: Havegum
+version: 1
+description: Show buildings that are missing the 'building:levels' tag.
+experimental: true
+
+kinds:
+  buildings:
+    matcher:
+      building:
+        when:
+          "$missing": ["building:levels"]
